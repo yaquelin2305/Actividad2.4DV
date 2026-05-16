@@ -100,13 +100,12 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          mvn verify sonar:sonar \
-          -Dsonar.projectKey=cbugueno-duoc_bdget-jacoco \
-          -Dsonar.organization=cbugueno-duoc \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=$SONAR_TOKEN \
-          -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
-
+          mvn verify sonar:sonar `
+          -Dsonar.projectKey="yaquelin2305_Actividad2.4DV" `
+          -Dsonar.organization="yaquelin2305" `
+          -Dsonar.host.url="https://sonarcloud.io" `
+          -Dsonar.login="$env:SONAR_TOKEN" `
+          -Dsonar.coverage.jacoco.xmlReportPaths="target/site/jacoco/jacoco.xml"
   # =========================
   # 🧱 4. BUILD FINAL
   # =========================
