@@ -107,7 +107,7 @@ jobs:
           -Dsonar.login="$env:SONAR_TOKEN" `
           -Dsonar.coverage.jacoco.xmlReportPaths="target/site/jacoco/jacoco.xml"
   # =========================
-  # 🧱 4. BUILD FINAL
+  # 🧱 4. BUILD FINAL ..
   # =========================
   build:
     name: Build JAR
