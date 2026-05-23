@@ -46,7 +46,7 @@ jobs:
           path: snyk-report.json
 
   # =========================
-  # 🧪 2. TEST + JACOCO
+  # 🧪 2. TEST + JACOCO ...
   # =========================
   test:
     name: Run Tests with JaCoCo
